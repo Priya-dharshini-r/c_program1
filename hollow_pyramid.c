@@ -1,0 +1,30 @@
+#include<stdio.h>
+void hollow_rect(int n, int m)
+{
+  int i, j;
+  for (i = 1; i <= n; i++)
+  {
+    for (j = 1; j <= m; j++)
+    {
+      if (i==1 || i==n || j==1 || j==m)
+      {
+      	  printf("*");
+	  }
+      else
+      {
+      	printf(" ");
+	  }
+    }
+   printf("\n");
+  }
+}
+void main()
+{
+	int rows,coloumns;
+	printf("\nEnter the number of rows:");
+	scanf("%d",&rows);
+	printf("\nEnter the number of coloumns:");
+	scanf("%d",&coloumns);
+	printf("\n");
+	hollow_rect(rows,coloumns);
+}
